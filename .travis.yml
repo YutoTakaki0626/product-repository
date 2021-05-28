@@ -3,6 +3,7 @@ sudo: required
 service: docker
 
 before_install:
+  - docker login -u $yutotakaki -p $832f18c4-eefe-48bf-ba99-b181f0c81499
   - docker-compose up --build -d
 
 script:
